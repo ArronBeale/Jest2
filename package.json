@@ -1,0 +1,22 @@
+{
+  "name": "jest2",
+  "version": "1.0.0",
+  "description": "- Testing this Simon game using the javaScript Jest framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArronBeale/Jest2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArronBeale/Jest2/issues"
+  },
+  "homepage": "https://github.com/ArronBeale/Jest2#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

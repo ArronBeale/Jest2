@@ -3,7 +3,7 @@
  */
 
 
-const { game, newGame, clearPlayerMoves } = require('../game');
+const { game, newGame, showScore } = require('../game');
 
 beforeAll(() => {
     let fs = require('fs');
@@ -36,6 +36,7 @@ describe('newGame works correctly', () => {
         game.score = 42;
         game.playerMoves = ['button2', 'button2'];
         game.currentGame = ['button2', 'button2'];
+        document.getElementById('score').innerText = '42';
         newGame();
     });
     test('should set game score to zero', () => {
@@ -46,5 +47,8 @@ describe('newGame works correctly', () => {
     });
     test('should clear currentGame array', () => {
         expect(game.currentGame.length).toBe(0);
+    });
+    test('should display 0 for the element with id of score', () => {
+        expect(document.getElementById('score').innerText).toEqual(0);
     });
 })
